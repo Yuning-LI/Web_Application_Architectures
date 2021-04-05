@@ -1,0 +1,68 @@
+<!--
+Beware of canvas size and resolution, they are different
+canvas have a default resolution of 300x150, so if you specify a bigger size in your css, pixel will be stretched, giving your figures ugly borders-->
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./ws5.css">
+		<title>Workshop5_Yuning LI</title>
+	</head>
+	<body>
+		<h1 id="title">ws5 canvas</h1>
+		<div id="controlbar">
+			<div>
+				<label for="shapePicker">choose shape: </label>
+				<select id="shapePicker">
+  					<option value ="square">square</option>
+  					<option value ="triangle">triangle</option>
+  					<option value ="circle">circle</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="bgcolorPicker">choose background color: </label>
+				<input id="bgcolorPicker" type="color" name="bgcolor" value="#fff">
+			</div>
+
+			<div>
+				<label for="bordercolorPicker">choose border color: </label>
+				<input id="bordercolorPicker" type="color" name="bordercolor" value="#fff">
+			</div>
+
+			<div>
+				<label for="borderthicknessPicker">choose border thickness: </label>
+				<select id="borderthicknessPicker">
+  					<option value ="2px">2px</option>
+  					<option value ="4px">4px</option>
+  					<option value ="6px">6px</option>
+  					<option value ="8px">8px</option>
+  					<option value ="10px">10px</option>
+  					<option value ="20px">20px</option>
+				</select>
+			</div>			
+
+			<div>
+				<label for="figuresizePicker">choose figure size: </label>
+				<select id="figuresizePicker">
+  					<option value ="20px">20px</option>
+  					<option value ="40px">40px</option>
+  					<option value ="60px">60px</option>
+  					<option value ="80px">80px</option>
+  					<option value ="100px">100px</option>
+  					<option value ="200px">200px</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="displayButton">display</label>
+				<button id="displayButton">display</button>
+			</div>
+		</div>
+
+		<div id="drawingbox">
+			<canvas id="canvas"></canvas>
+		</div>
+	<script src="ws5.js" type="text/javascript"></script>
+	</body>
+</html>
+
+

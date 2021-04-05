@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <!-- REACT -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Don't use this in production: -->
+    <!-- JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      ReactDOM.render(
+      "Hello World !",
+       document.getElementById('root')
+      );
+    </script>
+    <script type="text/babel">
+      const name = 'DIA1';
+      const element = <h1>Hello, {name}!</h1>;
+      ReactDOM.render(
+        element,
+        document.getElementById('root')
+      );
+    </script>
+    <script type="text/babel">
+    function HelloWorld(props){
+      return <h1>{`Hello, ${props.name}!`}</h1>;
+    }
+      const element = <HelloWorld name="DIA1"/>;
+      ReactDOM.render(
+        element,
+        document.getElementById('root')
+      );
+    </script>
+    <script type="text/babel">
+    class HelloWorld extends React.Component {
+      render() {
+        return <h1>Hello, {this.props.name}!</h1>;
+      }
+    }
+      ReactDOM.render(
+        <HelloWorld name="DIA1"/>,
+        document.getElementById('root')
+      );
+      function App() {
+        return (
+          <div>
+            <HelloWorld name="DIA1"/>;
+            <HelloWorld name="DIA4"/>;
+            <HelloWorld name="World"/>;
+          </div>
+        );
+      }
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 4</title>
+</head>
+<body>
+    <h1>My app 😀</h1>
+    <div>
+        <div class="controlbar">
+            <label for="form">Canvas form</label><br>
+            <select id="form">
+                <option value="triangle">Triangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+            </select>
+            <br>
+        </div>
+        <div class="controlbar">
+            <label for="div_border">Canvas border color</label><br>
+            <input id="div_border" type="color"><br>
+        </div>
+        <div class="controlbar">
+            <label for="canvas_background">Canvas background color</label><br>
+            <input id="canvas_background" type="color"><br>
+        </div>
+        <div class="controlbar">
+            <label for="border_thickness">Border thickness</label><br>
+            <select id="border_thickness">
+                <option value="2">2px</option>
+                <option value="4">4px</option>
+                <option value="6">6px</option>
+                <option value="8">8px</option>
+                <option value="10">10px</option>
+                <option value="20">20px</option>
+            </select>
+            <br>
+        </div>
+        <div class="controlbar">
+            <label for="figure_size">Figure size</label><br>
+            <select id="figure_size">
+                <option value="20">20px</option>
+                <option value="40">40px</option>
+                <option value="60">60px</option>
+                <option value="80">80px</option>
+                <option value="100">100px</option>
+                <option value="200">200px</option>
+            </select>
+            <br>
+        </div>
+        <div class="controlbar">
+            <label for="draw">Figure size</label><br>
+            <button onclick="draw()" id="draw">Draw</button><br>
+        </div>
+        <div class="controlbar">
+            <label for="clrStorage">Clear storage</label><br>
+            <button onclick="clearStorage()" id="clrStorage">Clear storage</button><br>
+        </div>
+    </div>
+    <canvas id="canvas">
+
+    </canvas>
+</body>
+</html>
+
+<script src="script.js"></script>
+

@@ -1,0 +1,14 @@
+version : "3"
+services:
+  mongows:
+    image: "mongo:latest"
+    container_name: mongows
+    restart: "on-failure"
+  
+  nodews:
+    image: "node:latest"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/data"
+    command: tail -f /dev/null
